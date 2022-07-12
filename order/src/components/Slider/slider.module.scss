@@ -1,0 +1,91 @@
+@keyframes slider {
+    from {
+        // transform: translateX(100%);
+        opacity: 0.5;
+    }
+    to {
+        // transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.container_slider {
+    height: 402px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    height: 402px;
+    position: absolute;
+    overflow: hidden;
+    display: none;
+    animation: slider ease 0.5s;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slide.active_anim {
+    display: flex;
+    opacity: 1;
+}
+
+.btn_slide {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    svg {
+        width: 35px;
+        height: 35px;
+        fill: #aaa;
+        &:hover {
+            fill: rgb(20, 56, 9);
+        }
+    }
+}
+
+.pre {
+    top: 50%;
+    left: 20px;
+    transform: translateY(-60%);
+}
+
+.next {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-60%);
+}
+
+.container_dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin: 0 5px;
+    display: flex;
+    transform: translateX(-50%);
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    background-color: #f1f1f1;
+}
+
+.dot.active {
+    background-color: #f1f1f1;
+    border: 2px solid rgb(20, 56, 9);
+}

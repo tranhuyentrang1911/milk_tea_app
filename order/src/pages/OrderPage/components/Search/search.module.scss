@@ -1,0 +1,16 @@
+.container {
+    padding: 20px 0;
+    min-height: 320px;
+    .link {
+        padding-left: 30px;
+    }
+    p {
+        padding-left: 30px;
+    }
+    .no_data {
+        font-size: 2.5rem;
+        color: green;
+        text-align: center;
+        padding-top: 150px;
+    }
+}

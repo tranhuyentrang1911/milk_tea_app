@@ -1,0 +1,226 @@
+@import "../../../assets/styles/globals.scss";
+$main-color: rgb(236 239 241);
+@keyframes modalFadeIn {
+    from {
+        transform: translateY(-150px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.modal {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    &open {
+        display: flex;
+    }
+}
+
+.close {
+    position: absolute;
+    right: -16px;
+    top: -16px;
+    text-align: center;
+    button {
+        cursor: pointer;
+        width: 32px;
+        aspect-ratio: 1/1;
+        padding: 4px;
+        border: none;
+        background-color: $primary-color;
+        color: #fff;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        svg {
+            fill: #fff;
+            width: 15px;
+            height: 15px;
+        }
+    }
+}
+
+.main {
+    width: 640px;
+    height: 520px;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding: 20px;
+    animation: modalFadeIn ease 1s;
+    justify-content: space-between;
+}
+
+.main.type2 {
+    height: 400px;
+}
+
+.left {
+    width: 50%;
+    background-color: $main-color;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    padding: 20px 30px;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.right {
+    width: 50%;
+    padding-left: 20px;
+    cursor: pointer;
+    &>p {
+        font-size: 1.4rem;
+        margin: 10px 0;
+        color: $primary-color;
+        font-weight: bold;
+    }
+    .name {
+        color: $primary-color;
+        margin: 10px 0;
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+    .price {
+        font-weight: bold;
+        font-size: 1.9rem;
+        color: $primary-color;
+        display: inline-block;
+    }
+    .quantity {
+        display: inline-block;
+        margin-left: 60px;
+        button {
+            padding: 8px 12px;
+            border: none;
+            background-color: $primary-color;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 1.4rem;
+            font-weight: bold;
+            cursor: pointer;
+            svg {
+                fill: #fff;
+                height: 14px;
+                width: 14px;
+            }
+        }
+        span {
+            padding: 0 15px;
+            font-size: 1.4rem;
+        }
+    }
+    .size {
+        display: flex;
+        transition: 0.3s;
+        &_item {
+            border: 1px solid $main-color;
+            border-radius: 4px;
+            margin-right: 20px;
+            text-align: center;
+            .size_main {
+                font-size: 1.6rem;
+                padding: 5px 25px;
+                margin-bottom: 0;
+            }
+            .size_price {
+                font-size: 1rem;
+                background-color: $main-color;
+                padding: 3px;
+                border-bottom-left-radius: 4px;
+                border-bottom-right-radius: 4px;
+                margin-bottom: 0;
+            }
+            &:hover {
+                background-color: $main-color;
+                .size_price {
+                    background-color: $primary-color;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .note {
+        width: 280px;
+        height: 50px;
+        border-radius: 4px;
+        outline: none;
+        border: none;
+        border: 1px solid #aaa;
+        overflow: hidden;
+        resize: none;
+    }
+    .note.type2 {
+        width: 280px;
+        height: 80px;
+    }
+}
+
+.size_item.active {
+    background-color: $main-color;
+    .size_price {
+        background-color: $primary-color;
+        color: #fff;
+    }
+}
+
+.status_item.active {
+    background-color: $primary-color;
+    color: #fff;
+}
+
+.status {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    &_item {
+        background-color: $main-color;
+        border-radius: 4px;
+        padding: 7px 10px;
+        font-size: 1.3rem;
+        margin-right: 15px;
+        color: #000;
+        &:hover {
+            background-color: $primary-color;
+            color: #fff;
+        }
+    }
+}
+
+.bottom {
+    bottom: 20px;
+    width: 100%;
+    position: absolute;
+    padding-right: 40px;
+    button {
+        margin-right: 20px;
+        font-size: 1.4rem;
+        font-weight: 500;
+        bottom: 20px;
+        color: #fff;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        outline: none;
+        border: none;
+        border-radius: 4px;
+        background-color: $primary-color;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+}

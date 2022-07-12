@@ -1,0 +1,67 @@
+@import "../../../../assets/styles/globals.scss";
+.main {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 78px;
+    padding: 20px 20px 10px;
+    h3 {
+        color: $primary-color;
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+    .left,
+    .right {
+        width: 46%;
+        height: 450px;
+        margin: auto;
+        border: 1px solid #e6e6e6;
+        border-radius: 4px;
+        padding: 30px 20px;
+    }
+    .left {
+        .left_item {
+            margin-bottom: 25px;
+        }
+        .input {
+            padding: 12px;
+        }
+        .input.active {
+            border-color: red;
+        }
+        small {
+            color: red;
+            padding-left: 10px;
+        }
+    }
+    .right {
+        .right_item {
+            margin-bottom: 25px;
+        }
+        .price_item {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    svg {
+        fill: green;
+        height: 20px;
+        width: 20px;
+        margin-right: 10px;
+    }
+    button {
+        margin-top: 30px;
+        bottom: 20px;
+        width: 100%;
+        padding: 12px;
+        background-color: $primary-color;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 1.4rem;
+    }
+}

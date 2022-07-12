@@ -1,0 +1,787 @@
+{
+  "admin": [
+    {
+      "name": "admin",
+      "pass": "11111111"
+    }
+  ],
+  "users": [
+    {
+      "name": "Trần Thị Huyền Trang",
+      "phone": "0386299125",
+      "pass": "11111111",
+      "createdAt": 1656397427528,
+      "id": 1
+    },
+    {
+      "name": "hương",
+      "phone": "0386299126",
+      "pass": "22222222",
+      "createdAt": 1656487386389,
+      "id": 2
+    },
+    {
+      "name": "yến",
+      "phone": "03862991253",
+      "pass": "11111111",
+      "createdAt": 1656608726650,
+      "id": 3
+    },
+    {
+      "name": "java",
+      "phone": "03333333",
+      "pass": "11111111",
+      "createdAt": 1657449210155,
+      "id": 4
+    },
+    {
+      "name": "java",
+      "phone": "04444444",
+      "pass": "11111111",
+      "createdAt": 1657449317973,
+      "id": 5
+    }
+  ],
+  "category": [
+    {
+      "name": "Thức uống",
+      "img": "1.png",
+      "createdAt": 1656040643741,
+      "id": 1
+    },
+    {
+      "name": "Trà",
+      "img": "3.png",
+      "createdAt": 1656040679946,
+      "id": 3
+    },
+    {
+      "name": "Cà phê",
+      "img": "2.png",
+      "createdAt": 1656250043840,
+      "id": 4
+    },
+    {
+      "name": "Bakery",
+      "img": "4.png",
+      "createdAt": 1656257732710,
+      "id": 5
+    },
+    {
+      "name": "Snack",
+      "img": "5.png",
+      "createdAt": 1656258469941,
+      "id": 6
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Trà nhãn",
+      "categoryId": 1,
+      "categoryName": "Thức uống",
+      "img": "1.png",
+      "price": 50000
+    },
+    {
+      "id": 3,
+      "name": "Ngọc Viễn Đông",
+      "categoryId": 1,
+      "categoryName": "Thức uống",
+      "img": "2.png",
+      "price": 44000
+    },
+    {
+      "id": 4,
+      "name": "Caramen Chảy",
+      "categoryId": 1,
+      "categoryName": "Thức uống",
+      "img": "4.png",
+      "price": 49000
+    },
+    {
+      "id": 5,
+      "name": "Phin Sữa Đá",
+      "categoryId": 1,
+      "categoryName": "Thức uống",
+      "img": "5.png",
+      "price": 34000
+    },
+    {
+      "id": 6,
+      "name": "Sữa chua xoài",
+      "categoryId": 1,
+      "categoryName": "Thức uống",
+      "img": "6.png",
+      "price": 68000
+    },
+    {
+      "id": 7,
+      "name": "Latte Latte",
+      "categoryId": 1,
+      "categoryName": "Thức uống",
+      "img": "3.png",
+      "price": 44000
+    },
+    {
+      "name": "Cà Phê Arabica - Culi 200g",
+      "categoryId": 4,
+      "img": "coffee1.png",
+      "price": 62000,
+      "categoryName": "Cà phê",
+      "createdAt": 1656256255648,
+      "id": 8
+    },
+    {
+      "name": "Cà Phê Culi 200g",
+      "categoryId": 4,
+      "img": "coffee2.png",
+      "price": 51000,
+      "categoryName": "Cà phê",
+      "createdAt": 1656256281406,
+      "id": 9
+    },
+    {
+      "name": "Cà Phê Moka Không Bơ 500g",
+      "categoryId": 4,
+      "img": "coffee3.png",
+      "price": 206000,
+      "categoryName": "Cà phê",
+      "createdAt": 1656256330536,
+      "id": 10
+    },
+    {
+      "name": "Cà Phê Robusta Không Bơ 200g",
+      "categoryId": 4,
+      "img": "coffee4.png",
+      "price": 53000,
+      "categoryName": "Cà phê",
+      "createdAt": 1656256369188,
+      "id": 11
+    },
+    {
+      "name": "Cà Phê Royal Bơ 200g",
+      "categoryId": 4,
+      "img": "coffee5.png",
+      "price": 68000,
+      "categoryName": "Cà phê",
+      "createdAt": 1656256393805,
+      "id": 12
+    },
+    {
+      "name": "Cà Phê Arabica - Culi 500g",
+      "categoryId": 4,
+      "img": "coffee1_500g.png",
+      "price": 152000,
+      "categoryName": "Cà phê",
+      "createdAt": 1656256972177,
+      "id": 13
+    },
+    {
+      "name": "Bánh Mì Phúc Long (M)",
+      "categoryId": 5,
+      "img": "cake1.png",
+      "price": 31000,
+      "categoryName": "Bakery",
+      "createdAt": 1656257781405,
+      "id": 14
+    },
+    {
+      "name": "Green Tea Choco Cake",
+      "categoryId": 5,
+      "img": "cake2.png",
+      "price": 34000,
+      "categoryName": "Bakery",
+      "createdAt": 1656257796326,
+      "id": 15
+    },
+    {
+      "name": "Passion Panna Cotta",
+      "categoryId": 5,
+      "img": "cake3.png",
+      "price": 34000,
+      "categoryName": "Bakery",
+      "createdAt": 1656257815939,
+      "id": 16
+    },
+    {
+      "name": "Tiramisu Mini",
+      "categoryId": 5,
+      "img": "cake4.png",
+      "price": 34000,
+      "categoryName": "Bakery",
+      "createdAt": 1656257836231,
+      "id": 17
+    },
+    {
+      "name": "Mận Dẻo Gừng",
+      "categoryId": 6,
+      "img": "snack1.png",
+      "price": 45000,
+      "categoryName": "Snack",
+      "createdAt": 1656258883870,
+      "id": 18
+    },
+    {
+      "name": "Gừng Nướng Mật Ong",
+      "categoryId": 6,
+      "img": "snack2.png",
+      "price": 56000,
+      "categoryName": "Snack",
+      "createdAt": 1656258912780,
+      "id": 19
+    },
+    {
+      "name": "Nho Khô Úc - Hộp",
+      "categoryId": 6,
+      "img": "snack3.png",
+      "price": 38000,
+      "categoryName": "Snack",
+      "createdAt": 1656258943491,
+      "id": 20
+    },
+    {
+      "name": "Nho Khô Úc - Gói",
+      "categoryId": 6,
+      "img": "snack4.png",
+      "price": 18000,
+      "categoryName": "Snack",
+      "createdAt": 1656258959660,
+      "id": 21
+    },
+    {
+      "name": "Hồng trà túi lọc 2g x 25gói",
+      "categoryId": 3,
+      "img": "tea1.png",
+      "price": 36000,
+      "categoryName": "Trà",
+      "createdAt": 1656301893248,
+      "id": 22
+    },
+    {
+      "name": "Trà Đen 200g",
+      "categoryId": 3,
+      "img": "tea3.png",
+      "price": 53000,
+      "categoryName": "Trà",
+      "createdAt": 1656301914355,
+      "id": 23
+    },
+    {
+      "name": "Trà Đen 500g2",
+      "categoryId": 3,
+      "img": "tea3.png",
+      "price": 127000,
+      "categoryName": "Trà",
+      "createdAt": 1656301969569,
+      "id": 24
+    },
+    {
+      "name": "javashehe",
+      "categoryId": 5,
+      "img": "snack1.png",
+      "price": 111112,
+      "categoryName": "Bakery",
+      "id": 26
+    }
+  ],
+  "cart": [
+    {
+      "name": "Mận Dẻo Gừng",
+      "categoryId": 6,
+      "userId": 5,
+      "size": "",
+      "sugar": "",
+      "ice": "",
+      "img": "snack1.png",
+      "note": "",
+      "quantity": 2,
+      "price": 45000,
+      "createdAt": 1657464927697,
+      "id": 1
+    },
+    {
+      "name": "Caramen Chảy",
+      "categoryId": 1,
+      "userId": 1,
+      "size": "M",
+      "sugar": "Bình thường",
+      "ice": "Bình thường",
+      "img": "4.png",
+      "note": "",
+      "quantity": 1,
+      "price": 49000,
+      "createdAt": 1657593884982,
+      "id": 2
+    },
+    {
+      "name": "Caramen Chảy",
+      "categoryId": 1,
+      "userId": 1,
+      "size": "L",
+      "sugar": "Nhiều",
+      "ice": "Nhiều",
+      "img": "4.png",
+      "note": "",
+      "quantity": 2,
+      "price": 49000,
+      "createdAt": 1657593887287,
+      "id": 3
+    }
+  ],
+  "order": [
+    {
+      "date": "2022-06-30T07:12:01.025Z",
+      "userId": 1,
+      "phone": 386299125,
+      "price": 250000,
+      "note": "qqqqqqq",
+      "payment": "Thẻ ngân hàng",
+      "createdAt": 1656573121038,
+      "id": 1
+    },
+    {
+      "date": "2022-06-30T07:14:29.935Z",
+      "userId": 1,
+      "phone": 386299125,
+      "price": 250000,
+      "note": "wwwwwwwww",
+      "payment": "Ví điện tử",
+      "createdAt": 1656573269952,
+      "id": 2
+    },
+    {
+      "date": "2022-06-30T07:20:47.757Z",
+      "userId": 1,
+      "phone": 386299125,
+      "price": 250000,
+      "note": "",
+      "payment": "Trực tiếp",
+      "createdAt": 1656573647774,
+      "id": 3
+    },
+    {
+      "date": "2022-06-30T07:23:44.844Z",
+      "userId": 1,
+      "phone": 386299125,
+      "price": 250000,
+      "note": "q11",
+      "payment": "Trực tiếp",
+      "createdAt": 1656573824922,
+      "id": 4
+    },
+    {
+      "date": "2022-06-30T07:27:14.559Z",
+      "userId": 1,
+      "phone": 386299125,
+      "price": 103000,
+      "note": "wwwwwwwww",
+      "payment": "Trực tiếp",
+      "createdAt": 1656574034642,
+      "id": 5
+    },
+    {
+      "date": "2022-06-30T07:30:11.287Z",
+      "userId": 1,
+      "phone": 386299125,
+      "price": 69000,
+      "note": "wwwwwwww",
+      "payment": "Trực tiếp",
+      "createdAt": 1656574211365,
+      "id": 6
+    },
+    {
+      "date": "2022-06-30T08:19:51.234Z",
+      "userId": 2,
+      "phone": 386299126,
+      "price": 211000,
+      "note": "wwwww",
+      "payment": "Trực tiếp",
+      "status": "Đang giao hàng",
+      "createdAt": 1656577191336,
+      "id": 7
+    },
+    {
+      "date": "2022-06-30T17:14:33.629Z",
+      "userId": 3,
+      "phone": "03862991253",
+      "price": 253000,
+      "note": "",
+      "payment": "Trực tiếp",
+      "status": "Đang giao hàng",
+      "createdAt": 1656609273684,
+      "id": 8
+    },
+    {
+      "date": "2022-07-01T07:33:00.913Z",
+      "userId": 1,
+      "phone": "0386299125",
+      "price": 259000,
+      "note": "",
+      "payment": "Trực tiếp",
+      "status": "Đang giao hàng",
+      "createdAt": 1656660781032,
+      "id": 9
+    },
+    {
+      "date": "2022-07-01T07:37:18.092Z",
+      "userId": 3,
+      "phone": "03862991253",
+      "price": 211000,
+      "note": "",
+      "payment": "Trực tiếp",
+      "status": "Đang giao hàng",
+      "createdAt": 1656661038191,
+      "id": 10
+    },
+    {
+      "date": "2022-07-01T07:38:45.724Z",
+      "userId": 3,
+      "phone": "03862991253",
+      "price": 79000,
+      "note": "",
+      "payment": "Trực tiếp",
+      "status": "Đang giao hàng",
+      "createdAt": 1656661125798,
+      "id": 11
+    },
+    {
+      "date": "2022-07-01T07:42:32.190Z",
+      "userId": 3,
+      "phone": "03862991253",
+      "price": 84000,
+      "note": "",
+      "payment": "Trực tiếp",
+      "status": "Đang giao hàng",
+      "createdAt": 1656661352240,
+      "id": 12
+    },
+    {
+      "date": "2022-07-01T07:44:52.828Z",
+      "userId": 1,
+      "phone": "0386299125",
+      "price": 118000,
+      "note": "",
+      "address": "Ngõ 115 số 4 đường Chiến Thắng",
+      "payment": "Trực tiếp",
+      "status": "Đang giao hàng",
+      "createdAt": 1656661492886,
+      "id": 13
+    },
+    {
+      "date": "2022-07-01T16:00:01.065Z",
+      "userId": 1,
+      "phone": "0386299125",
+      "price": 71000,
+      "note": "",
+      "address": "Ngõ 115 số 4 đường Chiến Thắng",
+      "payment": "Trực tiếp",
+      "status": "Đang giao hàng",
+      "createdAt": 1656691201125,
+      "id": 14
+    },
+    {
+      "date": "2022-07-02T05:30:28.183Z",
+      "userId": 1,
+      "phone": "0386299125",
+      "price": 465000,
+      "note": "",
+      "address": "Ngõ 115 số 4 đường Chiến Thắng",
+      "payment": "Trực tiếp",
+      "status": "Đang giao hàng",
+      "createdAt": 1656739828353,
+      "id": 15
+    },
+    {
+      "date": "2022-07-08T09:02:35.465Z",
+      "userId": 1,
+      "phone": "0386299125",
+      "price": 133000,
+      "note": "",
+      "address": "đweeeee",
+      "payment": "Trực tiếp",
+      "status": "Đang giao hàng",
+      "id": 16
+    },
+    {
+      "date": "2022-07-08T14:42:08.638Z",
+      "userId": 1,
+      "phone": "0386299125",
+      "price": 263000,
+      "note": "",
+      "address": "Ngõ 115 số 4 đường Chiến Thắng",
+      "payment": "Trực tiếp",
+      "status": "Đang giao hàng",
+      "id": 17
+    },
+    {
+      "date": "2022-07-09T15:14:03.682Z",
+      "userId": 1,
+      "phone": "0386299125",
+      "price": 85000,
+      "note": "",
+      "address": "Ngõ 115 số 4 đường Chiến Thắng",
+      "payment": "Trực tiếp",
+      "status": "Đang giao hàng",
+      "id": 18
+    },
+    {
+      "date": "2022-07-10T10:56:24.494Z",
+      "userId": 5,
+      "phone": "04444444",
+      "price": 133000,
+      "note": "",
+      "address": "Ngõ 115 số 4 đường Chiến Thắng",
+      "payment": "Thẻ ngân hàng",
+      "status": "Đang giao hàng",
+      "createdAt": 1657450585586,
+      "id": 19
+    },
+    {
+      "date": "2022-07-12T02:42:55.110Z",
+      "userId": 1,
+      "phone": "0386299125",
+      "price": 257000,
+      "note": "",
+      "address": "Hà Đông Hà Nội",
+      "payment": "Thẻ ngân hàng",
+      "status": "Đang giao hàng",
+      "createdAt": 1657593775251,
+      "id": 20
+    }
+  ],
+  "promotion": [
+    {
+      "id": 1,
+      "start": "11/05/2022",
+      "end": "15/5/2022",
+      "img": "1.png",
+      "title": "Vị ngon bất tận",
+      "content": "aaa"
+    },
+    {
+      "id": 2,
+      "start": "11/05/2022",
+      "end": "15/5/2022",
+      "img": "2.png",
+      "title": "Vị ngon bất tận",
+      "content": "aaa"
+    },
+    {
+      "id": 3,
+      "start": "11/05/2022",
+      "end": "15/5/2022",
+      "img": "3.png",
+      "title": "Vị ngon bất tận",
+      "content": "aaa"
+    },
+    {
+      "id": 4,
+      "start": "11/05/2022",
+      "end": "15/5/2022",
+      "img": "4.png",
+      "title": "Vị ngon bất tận",
+      "content": "aaa"
+    },
+    {
+      "id": 5,
+      "start": "11/05/2022",
+      "end": "15/5/2022",
+      "img": "5.png",
+      "title": "Vị ngon bất tận",
+      "content": "aaa"
+    },
+    {
+      "id": 6,
+      "start": "11/05/2022",
+      "end": "15/5/2022",
+      "img": "6.png",
+      "title": "Vị ngon bất tận",
+      "content": "aaa"
+    },
+    {
+      "id": 7,
+      "start": "11/05/2022",
+      "end": "15/5/2022",
+      "img": "7.png",
+      "title": "Vị ngon bất tận",
+      "content": "aaa"
+    },
+    {
+      "id": 8,
+      "start": "11/05/2022",
+      "end": "15/5/2022",
+      "img": "8.png",
+      "title": "Vị ngon bất tận",
+      "content": "aaa"
+    },
+    {
+      "id": 9,
+      "start": "11/05/2022",
+      "end": "15/5/2022",
+      "img": "9.png",
+      "title": "Vị ngon bất tận",
+      "content": "aaa"
+    },
+    {
+      "id": 10,
+      "start": "11/05/2022",
+      "end": "15/5/2022",
+      "img": "10.png",
+      "title": "Vị ngon bất tận",
+      "content": "aaa"
+    },
+    {
+      "id": 11,
+      "start": "11/05/2022",
+      "end": "15/5/2022",
+      "img": "1.png",
+      "title": "Vị ngon bất tận",
+      "content": "aaa"
+    },
+    {
+      "id": 12,
+      "start": "11/05/2022",
+      "end": "15/5/2022",
+      "img": "2.png",
+      "title": "Vị ngon bất tận",
+      "content": "aaa"
+    },
+    {
+      "id": 13,
+      "start": "11/05/2022",
+      "end": "15/5/2022",
+      "img": "2.png",
+      "title": "Vị ngon bất tận",
+      "content": "aaa"
+    },
+    {
+      "id": 14,
+      "start": "11/05/2022",
+      "end": "15/5/2022",
+      "img": "2.png",
+      "title": "Vị ngon bất tận",
+      "content": "aaa"
+    },
+    {
+      "id": 15,
+      "start": "11/05/2022",
+      "end": "15/5/2022",
+      "img": "2.png",
+      "title": "Vị ngon bất tận",
+      "content": "aaa"
+    },
+    {
+      "id": 16,
+      "start": "11/05/2022",
+      "end": "15/5/2022",
+      "img": "2.png",
+      "title": "Vị ngon bất tận",
+      "content": "aaa"
+    },
+    {
+      "id": 17,
+      "start": "11/05/2022",
+      "end": "15/5/2022",
+      "img": "2.png",
+      "title": "Vị ngon bất tận",
+      "content": "aaa"
+    },
+    {
+      "id": 18,
+      "start": "11/05/2022",
+      "end": "15/5/2022",
+      "img": "2.png",
+      "title": "Vị ngon bất tận",
+      "content": "aaa"
+    },
+    {
+      "id": 19,
+      "start": "11/05/2022",
+      "end": "15/5/2022",
+      "img": "2.png",
+      "title": "Vị ngon bất tận",
+      "content": "aaa"
+    },
+    {
+      "id": 20,
+      "start": "11/05/2022",
+      "end": "15/5/2022",
+      "img": "2.png",
+      "title": "Vị ngon bất tận",
+      "content": "aaa"
+    },
+    {
+      "id": 21,
+      "start": "11/05/2022",
+      "end": "15/5/2022",
+      "img": "2.png",
+      "title": "Vị ngon bất tận",
+      "content": "aaa"
+    },
+    {
+      "id": 22,
+      "start": "11/05/2022",
+      "end": "15/5/2022",
+      "img": "2.png",
+      "title": "Vị ngon bất tận",
+      "content": "aaa"
+    },
+    {
+      "id": 23,
+      "start": "11/05/2022",
+      "end": "15/5/2022",
+      "img": "2.png",
+      "title": "Vị ngon bất tận",
+      "content": "aaa"
+    },
+    {
+      "id": 24,
+      "start": "11/05/2022",
+      "end": "15/5/2022",
+      "img": "2.png",
+      "title": "Vị ngon bất tận",
+      "content": "aaa"
+    },
+    {
+      "id": 25,
+      "start": "11/05/2022",
+      "end": "15/5/2022",
+      "img": "2.png",
+      "title": "Vị ngon bất tận",
+      "content": "aaa"
+    },
+    {
+      "id": 26,
+      "start": "11/05/2022",
+      "end": "15/5/2022",
+      "img": "2.png",
+      "title": "Vị ngon bất tận",
+      "content": "aaa"
+    },
+    {
+      "id": 27,
+      "start": "11/05/2022",
+      "end": "15/5/2022",
+      "img": "2.png",
+      "title": "Vị ngon bất tận",
+      "content": "aaa"
+    },
+    {
+      "id": 28,
+      "start": "11/05/2022",
+      "end": "15/5/2022",
+      "img": "2.png",
+      "title": "Vị ngon bất tận",
+      "content": "aaa"
+    },
+    {
+      "id": 29,
+      "start": "11/05/2022",
+      "end": "15/5/2022",
+      "img": "2.png",
+      "title": "Vị ngon bất tận",
+      "content": "aaa"
+    }
+  ]
+}

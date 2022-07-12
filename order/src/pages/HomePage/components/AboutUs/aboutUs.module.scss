@@ -1,0 +1,36 @@
+@import "../../../../assets/styles/globals.scss";
+$main-color: #008000;
+.banner {
+    width: 100%;
+    height: 402px;
+    background: url("../../../../assets//images/banner/bannervechungtoi.jpg");
+    background-size: cover;
+}
+
+.main {
+    width: 80%;
+    margin: 0 auto 80px;
+    font-size: 1.5rem;
+    text-align: justify;
+    h1 {
+        text-align: center;
+        color: $primary-color;
+        font-size: 3.5rem;
+        padding: 20px 0;
+        font-family: myFirstFont;
+        text-transform: uppercase;
+    }
+    .logo {
+        width: 180px;
+        height: 160px;
+        margin: auto;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    h2 {
+        color: $main-color;
+        text-transform: uppercase;
+    }
+}

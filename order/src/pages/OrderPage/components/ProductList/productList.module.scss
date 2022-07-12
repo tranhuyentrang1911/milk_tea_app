@@ -1,0 +1,60 @@
+@import "../../../../assets/styles/globals.scss";
+$main-color: #eceff1;
+.main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main_item {
+    width: 17%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 4px;
+    margin: 0px 0 33px 33px;
+    border: 1px solid $main-color;
+    .img {
+        padding: 50px;
+        background-color: $main-color;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .name {
+        font-size: 1.5rem;
+        color: $primary-color;
+        padding-top: 5px;
+        padding-left: 15px;
+    }
+    .price {
+        padding-left: 15px;
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: $primary-color;
+    }
+    button {
+        padding: 10px;
+        border-radius: 4px;
+        border: none;
+        background-color: $primary-color;
+        outline: none;
+        color: #fff;
+        width: 90%;
+        margin: 10px auto 20px;
+        cursor: pointer;
+        font-weight: bold;
+        svg {
+            height: 13px;
+            width: 13px;
+            fill: #fff;
+            margin-right: 10px;
+        }
+    }
+    &:hover {
+        box-shadow: 0 0px 5px rgba(0, 0, 0, 0.3);
+    }
+}

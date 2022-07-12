@@ -1,0 +1,74 @@
+@import "../../../../assets/styles/globals.scss";
+.footer {
+    width: 100%;
+    height: 380px;
+    background-color: $primary-color;
+    color: #fff;
+    display: flex;
+    padding: 30px;
+}
+
+.left {
+    flex: 1;
+    margin-right: 30px;
+    div :first-child {
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+    span {
+        font-size: 1.4rem;
+        line-height: 2.3;
+    }
+    h2 {
+        margin-bottom: 7px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #ffffff;
+        font-size: 1.7rem;
+    }
+}
+
+.right {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    div {
+        width: 25%;
+    }
+    p {
+        font-size: 1.3rem;
+        line-height: 2.5;
+    }
+    h2 {
+        margin-bottom: 7px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #fff;
+        font-size: 1.7rem;
+    }
+}
+
+.copy_right {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    h3 {
+        color: $primary-color;
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+    .icon_contact {
+        svg {
+            margin-left: 15px;
+            width: 20px;
+            height: 20px;
+            fill: $primary-color;
+            &:hover {
+                cursor: pointer;
+                opacity: 0.8;
+            }
+        }
+    }
+}

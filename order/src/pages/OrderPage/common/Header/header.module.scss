@@ -1,0 +1,142 @@
+@import "../../../../assets/styles/globals.scss";
+.header {
+    width: 100%;
+    height: 76px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    background-color: #fff;
+}
+
+.left {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    .logo {
+        width: 20%;
+        height: 100%;
+        img {
+            width: 80%;
+            height: 80%;
+            offset-position: center;
+        }
+    }
+    .search {
+        width: 60%;
+        position: relative;
+        input {
+            width: 100%;
+            padding: 12px 50px;
+            border-radius: 25px;
+            border: none;
+            outline: none;
+            background-color: #eceff1;
+            font-size: 1.4rem;
+        }
+        svg {
+            width: 14px;
+            height: 14px;
+            fill: #a3a3a3;
+            cursor: pointer;
+            position: absolute;
+            top: 30%;
+            left: 6%;
+        }
+    }
+}
+
+.right {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    .user,
+    .email {
+        position: relative;
+        svg {
+            width: 24px;
+            height: 24px;
+            fill: $primary-color;
+            cursor: pointer;
+        }
+    }
+    .user {
+        &:hover {
+            .user_action.active {
+                display: flex;
+            }
+        }
+    }
+    .email {
+        &:hover {
+            .email_action.active {
+                display: flex;
+            }
+        }
+    }
+    .user_action {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        top: 100%;
+        right: -100%;
+        height: 200px;
+        width: 250px;
+        border-radius: 2px;
+        background-color: #fff;
+        box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.3);
+        .top {
+            width: 100%;
+            text-align: center;
+            height: 130px;
+            background-color: $primary-color;
+            color: #fff;
+            font-size: 1.5rem;
+            svg {
+                width: 40px;
+                height: 40px;
+                margin-top: 30px;
+                margin-bottom: 10px;
+                fill: #fff;
+                cursor: pointer;
+            }
+        }
+        .bottom {
+            width: 100%;
+            height: 70px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            button {
+                width: 45%;
+                border: none;
+                border-radius: 10px;
+                padding: 5px;
+                background-color: #fff;
+                border: 1px solid #aaa;
+                cursor: pointer;
+                color: #aaa;
+                &:hover {
+                    color: $primary-color;
+                    border: 1px solid $primary-color;
+                }
+            }
+        }
+    }
+    .email_action {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        height: 350px;
+        width: 250px;
+        background-color: #fff;
+        box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.3);
+    }
+}

@@ -1,0 +1,64 @@
+@import "../../../../assets/styles/globals.scss";
+.banner {
+    width: 100%;
+    height: 402px;
+    background: url("../../../../assets//images/banner/coffee_banner.jpg");
+    background-size: cover;
+}
+
+.banner_tea {
+    width: 100%;
+    height: 402px;
+    background: url("../../../../assets//images/banner/tea_banner.jpg");
+    background-size: cover;
+}
+
+.main {
+    width: 85%;
+    margin: 80px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.heading {
+    font-family: myFirstFont;
+    color: $primary-color;
+    text-align: center;
+    font-size: 3.5rem;
+    margin: 30px 0 20px;
+    text-transform: uppercase;
+}
+
+.logo {
+    width: 300px;
+    height: 30px;
+    margin: auto;
+}
+
+.main_item {
+    width: 48%;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
+        transition: all 0.5s ease 0s;
+        opacity: 1;
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.3);
+            opacity: 0.9;
+        }
+    }
+    margin-bottom: 50px;
+    .content {
+        font-size: 1.6rem;
+        font-weight: 400;
+        text-align: justify;
+    }
+}

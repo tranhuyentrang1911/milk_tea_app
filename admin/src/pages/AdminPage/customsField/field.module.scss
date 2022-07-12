@@ -1,0 +1,40 @@
+.form_group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.form_label {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.form_control {
+    width: 300px;
+    padding: 10px;
+    font-size: 1.4rem;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #aaa;
+    &_active {
+        padding: 10px;
+        width: 300px;
+        font-size: 1.4rem;
+        border-radius: 4px;
+        outline: none;
+        border: 1px solid #f44336;
+    }
+    &:focus {
+        border: 1px solid rgb(79, 219, 208);
+    }
+}
+
+.form_message {
+    padding-left: 10px;
+    color: #f44336;
+    font-size: 1.2rem;
+    font-weight: 500;
+    align-content: start;
+}

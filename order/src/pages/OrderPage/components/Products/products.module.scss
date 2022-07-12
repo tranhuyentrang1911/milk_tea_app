@@ -1,0 +1,15 @@
+@import "../../../../assets/styles/globals.scss";
+.heading {
+    text-align: center;
+    color: $primary-color;
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-family: mySecondFont;
+    text-transform: uppercase;
+}
+
+.content {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}

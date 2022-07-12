@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: url("../../assets/images/banner/background-dep-5.png") top center;
+    background-size: cover;
+    h2 {
+        margin-bottom: 20px;
+        color: cornflowerblue;
+        text-transform: uppercase;
+    }
+    .form_group {
+        width: 25%;
+        margin-bottom: 20px;
+    }
+    .input {
+        width: 100%;
+        padding: 12px;
+        border-radius: 25px;
+    }
+    .input.active {
+        border-color: rgb(243, 40, 33);
+    }
+    button {
+        padding: 22x;
+        border-radius: 25px;
+        color: cornflowerblue;
+        width: 180px;
+    }
+    small {
+        padding-left: 20px;
+        color: rgb(243, 40, 33);
+        text-align: left;
+        font-size: 1.2rem;
+    }
+}

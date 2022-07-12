@@ -1,0 +1,210 @@
+@import "../../../../assets/styles/globals.scss";
+$main-color: rgb(236 239 241);
+@keyframes modalFadeIn {
+    from {
+        transform: translateX(150px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.modal {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: right;
+    &open {
+        display: flex;
+    }
+}
+
+.close {
+    position: absolute;
+    right: 16px;
+    top: 8px;
+    text-align: center;
+    button {
+        width: 32px;
+        aspect-ratio: 1/1;
+        cursor: pointer;
+        padding: 4px;
+        border: none;
+        background-color: $primary-color;
+        color: #fff;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        svg {
+            fill: #fff;
+            width: 15px;
+            height: 15px;
+        }
+    }
+}
+
+.container {
+    width: 630px;
+    height: 100vh;
+    position: relative;
+    right: 0;
+    top: 0;
+    background-color: #fff;
+    animation: modalFadeIn ease 1s;
+}
+
+.main {
+    width: 100%;
+    height: 500px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    .sad_icon {
+        svg {
+            width: 100px;
+            height: 100px;
+            fill: green;
+            margin: 60px 260px 20px;
+        }
+    }
+}
+
+.heading {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: $primary-color;
+    padding: 10px 20px;
+    border-bottom: 1px solid #aaa;
+}
+
+.main_item {
+    border-bottom: 1px solid #aaa;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    width: 70%;
+    display: flex;
+}
+
+.img {
+    width: 88px;
+    height: 90px;
+    background-color: $main-color;
+    border-radius: 15px;
+    margin-right: 20px;
+    img {
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+    }
+}
+
+.information {
+    width: 300px;
+    height: 90px;
+    .name {
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: $primary-color;
+    }
+    .detail {
+        font-size: 1.3rem;
+        font-weight: 400;
+        color: #000;
+    }
+    .price {
+        margin-top: 15px;
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: $primary-color;
+    }
+}
+
+.action {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    div {
+        display: flex;
+        justify-content: space-evenly;
+        .update {
+            cursor: pointer;
+            svg {
+                width: 20px;
+                height: 20px;
+                fill: #40a61b;
+            }
+        }
+        .delete {
+            cursor: pointer;
+            svg {
+                width: 20px;
+                height: 20px;
+                fill: #fc4903;
+            }
+        }
+    }
+    .quantity {
+        button {
+            padding: 7px 10px;
+            border: none;
+            background-color: $primary-color;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 1.4rem;
+            font-weight: bold;
+            cursor: pointer;
+            svg {
+                fill: #fff;
+                width: 14px;
+                height: 14px;
+            }
+        }
+        span {
+            padding: 0 15px;
+            font-size: 1.4rem;
+        }
+    }
+}
+
+.bottom {
+    bottom: 20px;
+    width: 100%;
+    position: absolute;
+    padding: 0 20px;
+    .total_price {
+        margin: 15px 0;
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: $primary-color;
+    }
+    button {
+        font-size: 1.4rem;
+        font-weight: 600;
+        bottom: 20px;
+        color: #fff;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        outline: none;
+        border: none;
+        border-radius: 4px;
+        background-color: $primary-color;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+}
+
+.clear {
+    clear: both;
+}
