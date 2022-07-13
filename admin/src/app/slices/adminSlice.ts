@@ -3,6 +3,8 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import AdminApi from "api/adminApi";
 import { Admin, User } from "models";
 
+import { showMessage } from "./../../utils/common";
+
 export interface AdminState {
   status: "idle" | "loading";
   list: Admin[];
@@ -51,6 +53,7 @@ export const signInThunk = createAsyncThunk(
         await fetchToken(dataRes.token);
         return dataRes;
       } else {
+        showMessage("Tên đăng nhập hoặc mật khẩu không đúng");
         localStorage.removeItem("admin");
         return data;
       }

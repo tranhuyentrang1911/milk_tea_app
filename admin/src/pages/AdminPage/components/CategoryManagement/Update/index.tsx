@@ -1,7 +1,7 @@
 import { Button } from "antd";
 import { FastField, Form, Formik } from "formik";
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import * as Yup from "yup";
 
 import CategoryApi from "api/categoryApi";
@@ -10,6 +10,7 @@ import { updateCategory } from "app/slices/categorySlice";
 import { Category } from "models";
 import FileField from "pages/AdminPage/customsField/FileField";
 import InputField from "pages/AdminPage/customsField/InputField";
+import { showSuccess } from "utils";
 
 import styles from "../../../styles/admin.module.scss";
 
@@ -17,6 +18,7 @@ const UpdateCategory: React.FC = () => {
   const params = useParams();
   const categoryId = params.id;
   const dispatch = useAppDispatch();
+  const navigate = useNavigate();
 
   const [category, setCategory] = useState<Category>({
     id: "",
@@ -58,6 +60,8 @@ const UpdateCategory: React.FC = () => {
     const name = values.name;
     const img = values.img.name;
     dispatch(updateCategory({ id, name, img }));
+    showSuccess("Update danh mục");
+    navigate("/admin");
   };
   return (
     <>

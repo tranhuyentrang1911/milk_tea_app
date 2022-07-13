@@ -1,7 +1,7 @@
 import { Button } from "antd";
 import { FastField, Form, Formik } from "formik";
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import * as Yup from "yup";
 
 import ProductApi from "api/productApi";
@@ -20,6 +20,7 @@ const UpdateProduct = () => {
   const params = useParams();
   const productId = params.id;
   const dispatch = useAppDispatch();
+  const navigate = useNavigate();
   const [product, setProduct] = useState<Product>({
     name: "",
     categoryId: "",
@@ -104,7 +105,8 @@ const UpdateProduct = () => {
 
     dispatch(updateProduct(editProduct));
     //Toast Message
-    showSuccess("Update thành công");
+    showSuccess("Update sản phẩm");
+    navigate("/admin/product");
   };
   return (
     <>

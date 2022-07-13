@@ -4,11 +4,7 @@ import { FaTimes } from "react-icons/fa";
 import * as Yup from "yup";
 
 import { useAppDispatch, useAppSelector } from "app/hooks";
-import {
-  addUserThunk,
-  fetchUsersThunk,
-  selectUserList,
-} from "app/slices/usersSlice";
+import { addUserThunk, fetchUsersThunk, selectUserList } from "app/slices/usersSlice";
 import { User } from "models";
 
 import InputField from "../components/InputField";
@@ -72,6 +68,7 @@ const SignUp = () => {
     const newUser: User = { name, phone, pass };
 
     dispatch(addUserThunk(newUser));
+
     handleCloseForm();
   };
   return (

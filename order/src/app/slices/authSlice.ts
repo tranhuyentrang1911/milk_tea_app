@@ -4,6 +4,8 @@ import { AuthApi } from "api/authApi";
 import { RootState } from "app/store";
 import { Auth, User } from "models";
 
+import { showMessage } from "./../../utils/common";
+
 export interface AuthState {
   isLoggedIn: boolean;
   logging?: boolean;
@@ -25,6 +27,7 @@ export const loginThunk = createAsyncThunk(
         const dataRes = {
           token: "https://app-json-demo.herokuapp.com/api/login",
           user: data[0],
+          isAuth: true,
         };
 
         const fetchToken = async (url: string) => {
@@ -37,8 +40,12 @@ export const loginThunk = createAsyncThunk(
         await fetchToken(dataRes.token);
         return dataRes;
       } else {
+        const dataRes = {
+          isAuth: false,
+        };
+        showMessage("Số điện thoại hoặc mật khẩu không đúng");
         localStorage.removeItem("userCurrent");
-        return data;
+        return dataRes;
       }
     } catch (error) {}
   }
@@ -57,7 +64,7 @@ const authSlice = createSlice({
         state.logging = true;
       })
       .addCase(loginThunk.fulfilled, (state, action) => {
-        state.isLoggedIn = true;
+        state.isLoggedIn = action.payload.isAuth;
         state.logging = false;
         // state.currentUser = action.payload;
       })

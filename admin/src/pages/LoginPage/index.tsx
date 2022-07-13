@@ -29,8 +29,6 @@ const LoginPage: React.FC = () => {
     }),
 
     onSubmit: async (values: any) => {
-      alert("hello");
-      console.log(values);
       await dispatch(signInThunk(values));
       navigate("/admin");
     },

@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
 import UserApi from "api/userApi";
 import { RootState } from "app/store";
-import { User } from "models";
+import { UpdateUser, User } from "models";
 
 export interface UserState {
   status: "idle" | "loading";
@@ -46,6 +46,7 @@ export const fetchUsersThunk = createAsyncThunk(
     } catch (error) {}
   }
 );
+
 export const addUserThunk = createAsyncThunk(
   "users/addUserThunk",
 
@@ -56,6 +57,17 @@ export const addUserThunk = createAsyncThunk(
     } catch (error) {}
   }
 );
+export const changePassword = createAsyncThunk(
+  "users/changePassword",
+
+  async (user: UpdateUser): Promise<any> => {
+    try {
+      const data: User = await UserApi.update(user);
+      return data;
+    } catch (error) {}
+  }
+);
+
 //Actions
 
 //Selectors

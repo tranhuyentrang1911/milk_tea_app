@@ -1,6 +1,7 @@
 import { Button } from "antd";
 import { FastField, Form, Formik } from "formik";
 import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import * as Yup from "yup";
 
 import { useAppDispatch, useAppSelector } from "app/hooks";
@@ -10,11 +11,13 @@ import { Category, Product } from "models";
 import FileField from "pages/AdminPage/customsField/FileField";
 import InputField from "pages/AdminPage/customsField/InputField";
 import SelectField from "pages/AdminPage/customsField/SelectField";
+import { showMessage, showSuccess } from "utils";
 
 import styles from "../../../styles/admin.module.scss";
 
 const AddProduct = () => {
   const dispatch = useAppDispatch();
+  const navigate = useNavigate();
   useEffect(() => {
     dispatch(fetchCategory());
   }, []);
@@ -77,6 +80,8 @@ const AddProduct = () => {
     );
 
     dispatch(addProduct(newProduct));
+    showSuccess("Thêm sản phẩm");
+    navigate("/admin/product");
   };
   return (
     <>

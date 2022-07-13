@@ -1,6 +1,7 @@
 import { Button } from "antd";
 import { FastField, Form, Formik } from "formik";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import * as Yup from "yup";
 
 import { useAppDispatch } from "app/hooks";
@@ -8,6 +9,7 @@ import { addCategory } from "app/slices/categorySlice";
 import { Category } from "models";
 import FileField from "pages/AdminPage/customsField/FileField";
 import InputField from "pages/AdminPage/customsField/InputField";
+import { showMessage, showSuccess } from "utils";
 
 import styles from "../../../styles/admin.module.scss";
 
@@ -41,11 +43,14 @@ const AddCategory = () => {
   });
 
   const dispatch = useAppDispatch();
+  const navigate = useNavigate();
   const onSubmit = (values: any) => {
     const name = values.name;
     const img = values.img.name;
     const newCategory: Category = { name, img };
     dispatch(addCategory(newCategory));
+    showSuccess("Thêm danh mục");
+    navigate("/admin");
   };
   return (
     <>
